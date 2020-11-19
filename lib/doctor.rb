@@ -21,7 +21,7 @@ class Doctor
   end
   
   def patients
-    self.appointments.select {|appointment| appointment.patient}
+    self.appointments.map {|appointment| appointment.patient}
   end
   
 end
